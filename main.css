@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(273, 75%, 66%);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding-top:1.8rem;
+}
+
+
+
+main{
+    font-size:0.5rem;
+    height:750px;
+    margin:0 20px;
+    background-color: white;
+    padding-top: 100px;
+    border-radius: 2rem;
+}
+
+main h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;    
+    margin-bottom: 20px;
+}
+
+.accordion{
+    align-items: center;
+    padding: 10px;
+}
+
+.accordion-item{
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* .accordion-question::after{
+    content:url(images/icon-arrow-down.svg);
+    margin-left: 5px;
+    float: right;
+} */
+
+.accordion-question{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-image{
+    text-align: center;
+}
+
+.desktop-image{
+    display: none
+}
+
+.arrow-icon{
+    width: 10px;
+    height: 7px;
+    align-self: center;
+    justify-self: center;
+}
+
+.rotate{
+    transform: rotate(0.5turn);
+}
+
+.accordion-answer{
+    margin-top:10px;
+    display: none;
+    overflow: hidden;
+}
+
+.show{
+    display: block;
+}
+
+.bold{
+    font-weight: bold;
+}
+/* 
+.bold::after{
+    content: 'a';
+} */
+
+
+footer{
+    height: 150px;
+}
+
+@media screen and (min-width: 1080px) {
+    body{
+        font-size: 2rem;
+    }
+    
+    .desktop-flex{
+        display:flex;
+        background-color: white;
+        margin: auto;
+        max-width: 1000px;
+        border-radius: 2rem;
+      }
+
+    main{
+        /* max-width: 600px; */
+        flex-basis: 65%;
+    }
+
+    h1,.accordion{
+        width: 100%;
+        font-size: 3rem;
+    }
+    
+
+    .desktop-image{
+        display: inline;
+        flex-basis: 35%;
+        align-self: center; 
+    }
+
+    .mobile-image{
+        display: none;
+    }
+    
+
+}
