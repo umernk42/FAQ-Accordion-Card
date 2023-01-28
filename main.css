@@ -123,6 +123,10 @@ footer{
         flex-basis: 65%;
     }
 
+    h1{
+        color: red;
+    }
+
     h1,.accordion{
         width: 100%;
         font-size: 3rem;
